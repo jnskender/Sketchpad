@@ -1,0 +1,35 @@
+body{
+  font-family: arial;
+  background-color: rgb(31, 71, 126);
+
+}
+
+.column_left{
+  width: 99px;
+  float: left;
+}
+
+.column_right{
+  width: 99px;
+  float: right
+}
+
+.sketchpad{
+  width: 800px;
+  margin: 100px auto;
+  border-style: solid; /* Erase after completion */
+  border-width: thin;  /* Erase after completion */
+  background-color: white;
+}
+
+.grid{
+  border-style: solid; /* Erase after completion */
+  border-width: thin;  /* Erase after completion */
+  padding: 1px;
+  float: left;
+  background-color: white;
+}
+
+ul{
+  list-style: none;
+}
