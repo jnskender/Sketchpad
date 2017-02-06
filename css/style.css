@@ -1,52 +1,68 @@
-body{
-  font-family: arial;
-  background-color: rgb(31, 71, 126);
-
-}
-.wrapper{
-  width: 100%;
-  text-align: center;
+body {
+    font-family: arial;
+    background-color: rgb(31, 71, 126);
 }
 
-.column_left{
-  width: 40%;
-  max-width: 100px;
-  float: left;
+.wrapper {
+    width: 100%;
+    text-align: center;
 }
 
-
-.sketchpad{
-  width: 600px;
-  margin: 100px auto;
-  border-style: solid; /* Erase after completion */
-  border-width: thin;  /* Erase after completion */
-  background-color: white;
+.column_left {
+    width: 40%;
+    max-width: 100px;
+    float: left;
 }
 
-.grid{
-  border-style: solid; /* Erase after completion */
-  border-width: thin;  /* Erase after completion */
-  padding: 1px;
-  float: left;
-  background-color: white;
+.sketchpad {
+    width: 600px;
+    margin: 100px auto;
+    border-style: solid;
+    /* Erase after completion */
+    border-width: thin;
+    /* Erase after completion */
+    background-color: white;
 }
 
-.text_input{
-  width: 40px;
+.grid {
+    border-style: solid;
+    /* Erase after completion */
+    border-width: thin;
+    /* Erase after completion */
+    padding: 1px;
+    float: left;
+    background-color: white;
 }
 
-.button{
-  width: 150x;
+.grid_lines_hidden {
+    padding: 1px;
+    float: left;
+    background-color: white;
 }
 
-.nav{
-  text-align: center;
+.text_input {
+    width: 40px;
 }
 
-ul{
-  list-style: none;
+.button {
+    width: 150x;
 }
 
-#header{
-  text-align: center;
+.nav {
+    text-align: center;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+#header {
+    color: white;
+    text-align: center;
 }

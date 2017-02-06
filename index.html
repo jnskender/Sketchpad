@@ -3,7 +3,8 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Title</title>
+	<link rel="shortcut icon" href="images/initials.ico" />
+	<title>jnskender/sketchpad</title>
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="js/script.js" async></script>
@@ -14,27 +15,39 @@
 
 <body>
 	<div id="header">
-	<h2>jQuery Sketchpad!</h2>
+		<h2>jQuery Sketchpad!</h2>
 	</div>
 	<div class="nav">
 		<ul>
 			<li>
-				 <button type="button" class="button" id="btn_size_sbmt">Change Grid Size</button>
-				 <button type="button" class="button" id="btn_clear_sbmt">Clear Grid</button>
+				<button type="button" class="button" id="btn_size_sbmt">Change Grid Size</button>
 			</li>
 			<li>
-
-		</li>
+				<button type="button" class="button" id="btn_clear_sbmt">Clear Grid</button>
+			</li>
+			<li>
+				<label>Color: </label>
+				<select id="color_select">
+				<option value="Black">Black</option>
+				<option value="Red">Red</option>
+				<option value="Blue">Green</option>
+				<option value="Random">Random</option>
+				</select>
+			</li>
+			</li>
+			<li>
+				<button type="button" class="button" id="btn_change_color_sbmt">Change Color</button>
+			</li>
 		</ul>
 	</div>
 	<!--End Header-->
 	<div class="wrapper">
 
-	<div class="sketchpad">
+		<div class="sketchpad">
 
+		</div>
+		<!--End Sketchpad-->
 	</div>
-	<!--End Sketchpad-->
-</div>
 	<!--End wrapper-->
 
 
