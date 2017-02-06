@@ -1,7 +1,6 @@
 $(document).ready(function() {
 
     var default_grid_size = 16;
-
     var size = default_grid_size;
 
     addGrid(size);
@@ -24,6 +23,7 @@ $(document).ready(function() {
 }); //End Document Ready
 var block_size;
 
+/*
 function addGrid(size) {
     for (i = 1; i <= size * size; i++) {
         $('<div></div>').addClass("grid").css({
@@ -32,6 +32,17 @@ function addGrid(size) {
         }).appendTo(".sketchpad");
     }
 }
+*/
+
+var node = "";
+function addGrid(size) {
+    for (i = 1; i <= size * size; i++) {
+     node += "<div class='grid' style='width:" + setSize(size) + 'px;' + "height:" + setSize(size) + "px';></div>";
+    }
+    $(".sketchpad").append(node);
+    console.log(node);
+}
+
 
 function setSize(size) {
     var container_size = parseInt($(".sketchpad").css("width"));
