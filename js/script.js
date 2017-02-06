@@ -10,6 +10,9 @@ $(document).ready(function() {
         $(".grid").remove();
         changeSize();
     });
+    $("#btn_clear_sbmt").click(function() {
+        $(".grid").css("background-color", "white");
+    });
 }); //End Document Ready
 var block_size;
 
@@ -30,8 +33,9 @@ function setSize(size) {
 }
 
 function draw(color) {
+    var rgb_value = "rgb(" + randomColor() +","+ randomColor() +","+ randomColor() +")";
     $(".grid").mouseenter(function() {
-        $(this).css("background-color", color);
+        $(this).css("background-color", rgb_value);
     });
 }
 
@@ -48,4 +52,8 @@ function changeSize() {
         addGrid(size);
         draw("black");
     }
+}
+
+function randomColor(){
+  return Math.floor((Math.random() * 255) + 1);
 }
