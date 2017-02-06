@@ -3,19 +3,20 @@ body{
   background-color: rgb(31, 71, 126);
 
 }
+.wrapper{
+  width: 100%;
+  text-align: center;
+}
 
 .column_left{
-  width: 99px;
+  width: 40%;
+  max-width: 100px;
   float: left;
 }
 
-.column_right{
-  width: 99px;
-  float: right
-}
 
 .sketchpad{
-  width: 800px;
+  width: 600px;
   margin: 100px auto;
   border-style: solid; /* Erase after completion */
   border-width: thin;  /* Erase after completion */
@@ -28,6 +29,14 @@ body{
   padding: 1px;
   float: left;
   background-color: white;
+}
+
+.text_input{
+  width: 40px;
+}
+
+.button{
+  width: 60px;
 }
 
 ul{

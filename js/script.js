@@ -5,14 +5,17 @@ $(document).ready(function() {
     var size = default_grid_size;
 
     addGrid(size);
-    $("#btn_sbmt").click(function() {
-        var user_size = parseInt($("#grid_size_text").val());
-        if (isNaN(user_size)) {
-            alert(user_size + " is not a valid number! Try Again!");
-            console.log(user_size);
+    $("#btn_size_sbmt").click(function() {
+        var user_size_string = $("#grid_size_text").val();
+        var user_size_int = parseInt($("#grid_size_text").val());
+        if (isNaN(user_size_int)) {
+            alert(user_size_string + " is not a valid number! Try Again!");
+            console.log(user_size_int);
+        }else if(user_size_string.indexOf(' ') >= 0){
+          alert("Value cannot contain spaces");
         } else {
             clearGrid();
-            size = user_size;
+            size = user_size_int;
             addGrid(size);
             draw("black");
         }
