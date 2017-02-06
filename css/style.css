@@ -36,7 +36,11 @@ body{
 }
 
 .button{
-  width: 60px;
+  width: 150x;
+}
+
+.nav{
+  text-align: center;
 }
 
 ul{
